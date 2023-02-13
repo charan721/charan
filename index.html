@@ -1,0 +1,87 @@
+<html>
+<center>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none;}
+
+body {
+  background-color: #27CBCA;
+}
+h1{color:orange ;font-size:50px;text-align:center;}
+ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: yellow;
+}
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: middle;
+  padding: 20px 22px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: orange;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>HOME</h1>
+<ul>
+  <li><a href="sai.html">Contact</a></li>
+  <li><a href="ira.html">IRA REALITY</a></li>
+  <li><a href="sri.html">SRI ADITYA</a></li>
+  <li><a href="kmc.html">KMC</a></li>
+  <li><a href="ar.html">AR &IP</a></li>
+  <li><a href="em.html">Elite MEP</a></li>
+  <li><a class="active" href="index.html">Home</a></li>
+</ul>
+
+
+<div class="w3-content w3-display-container">
+
+  <img class="mySlides" src="17.png" style="width:50%">
+  <img class="mySlides" src="27.jpg" style="width:50%">
+  <img class="mySlides" src="37.png" style="width:50%">
+  <img class="mySlides" src="47.jpg" style="width:50%">
+  <img class="mySlides" src="57.png" style="width:50%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+<hr>
+<p>  &#169 2023SAI</p>
+</html>
